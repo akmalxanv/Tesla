@@ -189,6 +189,10 @@ footer svg {
         font-size: 18px;
     }
 
+    .main {
+        overflow: hidden;
+    }
+
     .txts_one {
         display: none;
     }
