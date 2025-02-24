@@ -14,7 +14,7 @@ body {
 
 
 header {
-    padding: 6.5px;
+    padding: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,23 +24,27 @@ header {
     background: #E7CC86;
 }
 
-.txts {
+.txts_one {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3px;
 }
 
-.txts :nth-child(1) {
+.txts_one :nth-child(1) {
     font-weight: bold;
+}
+
+.txts_two {
+    display: none;
 }
 
 .view {
     background: #000;
     color: white;
-    padding: 4px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -185,12 +189,38 @@ footer svg {
         font-size: 18px;
     }
 
-    .view {
-        padding: 4px;
-        padding-left: 14px;
-        padding-right: 14px;
-        border-radius: 5px;
+    .txts_one {
+        display: none;
+    }
+
+    .txts_two {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        font-size: 15px;
+    }
+
+    .one {
         font-weight: bold;
+    }
+
+    .two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: black;
+    }
+
+    .two a {
+        color: black;
+    }
+
+    .view {
+        display: none;
     }
 
     .btns {
